@@ -1,0 +1,14 @@
+<html>
+
+<body>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const redirectUrlEncodeded = urlParams.get('r');
+
+    const url = window.atob(redirectUrlEncodeded);
+
+    window.location.href = url;
+  </script>
+</body>
+
+</html>
